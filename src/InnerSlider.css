@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"rel="stylesheet");
+
+.innerSlider {
+  position: relative;
+  left: 120px;
+  top: 8px;
+  border: 1px black;
+  max-width: 1001px;
+  max-height: 605px;
+  padding: 0px;
+  margin: 0px;
+}
