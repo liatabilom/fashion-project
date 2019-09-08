@@ -9,6 +9,7 @@ class InnerCard extends Component {
     super(props);
 
     this.state = {
+      isLoaded: true,
       images: [
         "https://i.imgur.com/iRcnQT6.jpg",
         "https://i.imgur.com/JMScj7r.jpg",
@@ -19,6 +20,12 @@ class InnerCard extends Component {
       translateValue: 0
     };
   }
+
+  sidebarInfo = () => {
+    if (this.state.isLoaded === true)
+      return <i src="https://i.imgur.com/ucZ91t4.jpg" />;
+    if (this.state.images === [1]) return "https://i.imgur.com/4MESXU6.jpg";
+  };
 
   goToPrevSlide = () => {
     if (this.state.currentIndex === 0) return;
@@ -63,7 +70,9 @@ class InnerCard extends Component {
                 <Slide image={image} key={i} />
               ))}
             </div>
-            <div className="card-body col-3 innerCard">cenas</div>
+            <div className="card-body col-3 innerCard">
+              {this.sidebarInfo()}
+            </div>
             <LeftArrow goToPrevSlide={this.goToPrevSlide} />
             <RightArrow goToNextSlide={this.goToNextSlide} />
           </div>
