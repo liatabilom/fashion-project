@@ -6,7 +6,6 @@
   height: 850px;
   max-height: 900px;
   max-width: 1440px;
-  display: flex;
   padding: 0px;
   margin: 0px;
 }
@@ -21,4 +20,10 @@ header {
   align-items: flex-end;
   letter-spacing: -0.016em;
   color: #000000;
+}
+
+h2 {
+  position: relative;
+  left: 40px;
+  top: 80px;
 }
