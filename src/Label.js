@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Label extends Component {
-	label = () => {
+	label = id => {
 		if (this.props.id === 'WoolWorths')
 			return (
 				<div>

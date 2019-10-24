@@ -1,9 +1,8 @@
 .slider {
 	position: relative;
-	left: 10px;
-	top: 0px;
+	left: 100px;
+	top: 50px;
 	width: 500px;
-	margin: 0 auto;
 	height: 400px;
 	overflow: hidden;
 	white-space: nowrap;
@@ -40,4 +39,14 @@
 .rightArrow:before,
 .leftArrow:before {
 	color: #222;
+}
+
+@media screen and (max-width: 480px) {
+	.slider {
+		width: 300px;
+		left: 10px;
+	}
+	.slide {
+		width: 300px;
+	}
 }

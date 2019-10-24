@@ -63,7 +63,9 @@ class FashionSlider extends Component {
 	render() {
 		return (
 			<div className="slider">
-				<Label id={this.state.images.id} />
+				<div>
+					<Label id={this.state.images.id} />
+				</div>
 				<div
 					className="slider-wrapper"
 					style={{

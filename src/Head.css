@@ -11,14 +11,3 @@
 	color: #000000;
 	margin: 5px;
 }
-
-.row {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.side {
-	flex: 50%;
-	padding: 0px;
-	margin-left: 15px;
-}
