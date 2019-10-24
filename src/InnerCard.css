@@ -2,10 +2,7 @@
 
 .innerSlider {
 	background-image: url(https://i.imgur.com/6pubNrr.jpg);
-	background-color: transparent;
 	background-size: cover;
-	position: relative;
-	top: 5px;
 	width: 1000px;
 	height: 605px;
 	padding: 30px;
@@ -13,58 +10,10 @@
 }
 
 .innerCard {
-	color: white;
 	display: flex;
 	position: relative;
-	left: -20px;
-	top: 60px;
-	width: 400px;
+	left: 10px;
+	width: 600px;
 	margin: 0 auto;
-	height: 500px;
-	overflow: hidden;
-}
-
-.slider {
-	display: flex;
-	position: relative;
-	left: -20px;
-	top: 60px;
-	width: 500px;
-	margin: 0 auto;
-	height: 400px;
-	overflow: hidden;
-	white-space: nowrap;
-}
-
-.slider-wrapper {
-	position: relative;
-	height: 100%;
-	width: 200%;
-}
-
-.slide {
-	display: inline-block;
-	height: 100%;
-	width: 100%;
-}
-
-.nextArrow {
-	position: absolute;
-	top: 50%;
-	right: 0px;
-	z-index: 999;
-	color: #fff;
-}
-
-.backArrow {
-	position: absolute;
-	top: 50%;
-	left: 0px;
-	z-index: 999;
-	color: #fff;
-}
-
-.rightArrow:before,
-.leftArrow:before {
-	color: #222;
+	height: 600px;
 }

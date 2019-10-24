@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Slide from './components/Slide';
 import RightArrow from './components/RightArrow';
 import LeftArrow from './components/LeftArrow';
+import './FashionSlider.css';
 
 class FashionSlider extends Component {
 	constructor(props) {

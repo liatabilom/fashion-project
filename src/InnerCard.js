@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import FashionSlider from './FashionSlider';
 import './InnerCard.css';
 
 class InnerCard extends Component {
