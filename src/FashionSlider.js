@@ -8,8 +8,11 @@ import './FashionSlider.css';
 class FashionSlider extends Component {
 	constructor(props) {
 		super(props);
+		this.state = { isLoaded: false };
+	}
 
-		this.state = {
+	sliderCallback = () => {
+		this.setState({
 			isLoaded: true,
 			images: [
 				{
@@ -31,8 +34,8 @@ class FashionSlider extends Component {
 			],
 			currentIndex: 0,
 			translateValue: 0,
-		};
-	}
+		});
+	};
 
 	goToPrevSlide = () => {
 		if (this.state.currentIndex === 0) return;
@@ -60,6 +63,11 @@ class FashionSlider extends Component {
 	slideWidth = () => {
 		return document.querySelector('.slide').clientWidth;
 	};
+
+	componentWillMount() {
+		this.sliderCallback();
+	}
+
 	render() {
 		return (
 			<div className="slider">
