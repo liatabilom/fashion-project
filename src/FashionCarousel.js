@@ -78,17 +78,6 @@ class FashionCarousel extends Component {
 			<div>
 				<h1>
 					<div className="carousel">{this.carousel()}</div>
-					<h5>
-						<div className="selector">
-							<span>
-								WOMEN
-								<a href="https://fashionproject.netlify.com">
-									<FontAwesomeIcon icon={faPlusCircle} size="3x" className="plusIcon1" />
-								</a>
-								MULHER
-							</span>
-						</div>
-					</h5>
 				</h1>
 			</div>
 		);

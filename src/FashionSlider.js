@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Slide from './components/Slide';
 import RightArrow from './components/RightArrow';
 import LeftArrow from './components/LeftArrow';
+import Label from './Label';
 import './FashionSlider.css';
 
 class FashionSlider extends Component {
@@ -11,20 +12,27 @@ class FashionSlider extends Component {
 		this.state = {
 			isLoaded: true,
 			images: [
-				'https://i.imgur.com/iRcnQT6.jpg',
-				'https://i.imgur.com/JMScj7r.jpg',
-				'https://i.imgur.com/F5acUjB.jpg',
-				'https://i.imgur.com/FqlYSAx.jpg',
+				{
+					imageUrl: 'https://i.imgur.com/iRcnQT6.jpg',
+					id: 'WoolWorths',
+				},
+				{
+					imageUrl: 'https://i.imgur.com/JMScj7r.jpg',
+					id: 'Zara',
+				},
+				{
+					imageUrl: 'https://i.imgur.com/F5acUjB.jpg',
+					id: 'BananaRepublic',
+				},
+				{
+					imageUrl: 'https://i.imgur.com/FqlYSAx.jpg',
+					id: 'BrooksBrothers',
+				},
 			],
 			currentIndex: 0,
 			translateValue: 0,
 		};
 	}
-
-	sidebarInfo = () => {
-		if (this.state.isLoaded === true) return <i src="https://i.imgur.com/ucZ91t4.jpg" />;
-		if (this.state.images === [1]) return 'https://i.imgur.com/4MESXU6.jpg';
-	};
 
 	goToPrevSlide = () => {
 		if (this.state.currentIndex === 0) return;
@@ -55,6 +63,7 @@ class FashionSlider extends Component {
 	render() {
 		return (
 			<div className="slider">
+				<Label id={this.state.images.id} />
 				<div
 					className="slider-wrapper"
 					style={{
@@ -62,11 +71,10 @@ class FashionSlider extends Component {
 						transition: `transform ease-out 0.45s`,
 					}}
 				>
-					{this.state.images.map((image, i) => (
-						<Slide image={image} key={i} />
+					{this.state.images.map(images => (
+						<Slide image={images.imageUrl} key={images.id} />
 					))}
 				</div>
-				<div className="card-body col-3 innerCard">{this.sidebarInfo()}</div>
 				<LeftArrow goToPrevSlide={this.goToPrevSlide} />
 				<RightArrow goToNextSlide={this.goToNextSlide} />
 			</div>

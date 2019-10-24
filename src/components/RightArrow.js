@@ -7,7 +7,7 @@ const RightArrow = props => {
     <div className="nextArrow arrow" onClick={props.goToNextSlide}>
       <FontAwesomeIcon
         icon={faChevronCircleRight}
-        size="1x"
+        size="2x"
         className="rightArrow"
         aria-hidden="true"
       />

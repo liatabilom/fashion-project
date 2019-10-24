@@ -3,6 +3,8 @@
 .innerSlider {
 	background-image: url(https://i.imgur.com/6pubNrr.jpg);
 	background-size: cover;
+	position: relative;
+	top: 5px;
 	width: 1000px;
 	height: 605px;
 	padding: 30px;
@@ -10,10 +12,11 @@
 }
 
 .innerCard {
-	display: flex;
-	position: relative;
-	left: 10px;
-	width: 600px;
-	margin: 0 auto;
-	height: 600px;
+	justify-content: center;
 }
+
+/* @media screen and (max-width: 480px) {
+	.innerCard {
+		left: 12%;
+	}
+} */
