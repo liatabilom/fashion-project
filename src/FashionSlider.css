@@ -58,7 +58,9 @@
 		width: 300px;
 	}
 	.label {
-		right: 0px;
-		top: 500px;
+		width: 141%;
+		height: 20%;
+		right: -117px;
+		top: 450px;
 	}
 }
