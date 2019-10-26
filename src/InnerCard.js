@@ -11,7 +11,6 @@ class InnerCard extends Component {
 					<div className="card-body col-7">
 						<FashionSlider />
 					</div>
-					<div className="card-body col-3 border border-dark">Text</div>
 				</div>
 			</div>
 		);

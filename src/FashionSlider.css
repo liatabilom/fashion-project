@@ -41,6 +41,14 @@
 	color: #222;
 }
 
+.label {
+	position: absolute;
+	right: -280px;
+	top: 70px;
+	width: 50%;
+	height: 17%;
+}
+
 @media screen and (max-width: 480px) {
 	.slider {
 		width: 300px;
@@ -48,5 +56,9 @@
 	}
 	.slide {
 		width: 300px;
+	}
+	.label {
+		right: 0px;
+		top: 500px;
 	}
 }

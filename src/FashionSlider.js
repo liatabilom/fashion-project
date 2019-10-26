@@ -70,23 +70,24 @@ class FashionSlider extends Component {
 
 	render() {
 		return (
-			<div className="slider">
-				<div>
-					<Label id={this.state.images.id} />
+			<div>
+				<Label badge={this.state.currentIndex} />
+				<div className="slider">
+					<div
+						className="slider-wrapper"
+						style={{
+							transform: `translateX(${this.state.translateValue}px)`,
+							transition: `transform ease-out 0.45s`,
+						}}
+					>
+						{this.state.images.map(images => (
+							<Slide image={images.imageUrl} key={images.id} />
+						))}
+					</div>
+
+					<LeftArrow goToPrevSlide={this.goToPrevSlide} />
+					<RightArrow goToNextSlide={this.goToNextSlide} />
 				</div>
-				<div
-					className="slider-wrapper"
-					style={{
-						transform: `translateX(${this.state.translateValue}px)`,
-						transition: `transform ease-out 0.45s`,
-					}}
-				>
-					{this.state.images.map(images => (
-						<Slide image={images.imageUrl} key={images.id} />
-					))}
-				</div>
-				<LeftArrow goToPrevSlide={this.goToPrevSlide} />
-				<RightArrow goToNextSlide={this.goToNextSlide} />
 			</div>
 		);
 	}
