@@ -35,7 +35,7 @@ class Prototype extends Component {
 				className="prototype"
 				style={{
 					height: '300px',
-					width: '280px',
+					width: '350px',
 					overflow: 'scroll',
 				}}
 			>
