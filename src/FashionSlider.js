@@ -3,6 +3,8 @@ import Slide from './components/Slide';
 import RightArrow from './components/RightArrow';
 import LeftArrow from './components/LeftArrow';
 import Label from './Label';
+import Legend from './Legend';
+import Prototype from './Prototype';
 import './FashionSlider.css';
 
 class FashionSlider extends Component {
@@ -84,10 +86,11 @@ class FashionSlider extends Component {
 							<Slide image={images.imageUrl} key={images.id} />
 						))}
 					</div>
-
 					<LeftArrow goToPrevSlide={this.goToPrevSlide} />
 					<RightArrow goToNextSlide={this.goToNextSlide} />
 				</div>
+				<Prototype display={this.state.currentIndex} />
+				<Legend text={this.state.currentIndex} />
 			</div>
 		);
 	}

@@ -1,6 +1,6 @@
 .slider {
 	position: relative;
-	left: 100px;
+	left: 80px;
 	top: 50px;
 	width: 500px;
 	height: 400px;
@@ -43,10 +43,28 @@
 
 .label {
 	position: absolute;
-	right: -280px;
+	right: -320px;
 	top: 70px;
 	width: 50%;
-	height: 17%;
+	height: 15%;
+}
+
+.legend {
+	position: absolute;
+	right: -320px;
+	top: 316px;
+	width: 50%;
+	height: 35%;
+}
+
+.prototype {
+	position: absolute;
+	right: -320px;
+	top: 135px;
+}
+
+.protoPhoto {
+	width: 100%;
 }
 
 @media screen and (max-width: 480px) {
@@ -59,8 +77,22 @@
 	}
 	.label {
 		width: 141%;
-		height: 20%;
+		height: 18%;
 		right: -117px;
 		top: 450px;
+	}
+
+	.prototype {
+		width: 300px;
+		right: -117px;
+		right: -105px;
+		top: 528px;
+	}
+
+	.legend {
+		width: 141%;
+		height: 40%;
+		right: -117px;
+		top: 830px;
 	}
 }

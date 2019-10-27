@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import FashionSlider from './FashionSlider';
-import Label from './Label';
 import './InnerCard.css';
 
 class InnerCard extends Component {
