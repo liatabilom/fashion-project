@@ -13,7 +13,7 @@ class FashionSlider extends Component {
 		this.state = { isLoaded: false };
 	}
 
-	sliderCallback = () => {
+	fashionSliderCallback = () => {
 		this.setState({
 			isLoaded: true,
 			images: [
@@ -67,7 +67,7 @@ class FashionSlider extends Component {
 	};
 
 	componentWillMount() {
-		this.sliderCallback();
+		this.fashionSliderCallback();
 	}
 
 	render() {
