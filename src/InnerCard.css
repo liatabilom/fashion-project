@@ -21,3 +21,9 @@
 	padding: 0px;
 	margin-left: 15px;
 }
+
+@media screen and (max-width: 480px) {
+	.innerSlider {
+		background-size: 50%;
+	}
+}

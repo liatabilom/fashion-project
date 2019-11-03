@@ -85,9 +85,7 @@
 	}
 
 	.prototype {
-		width: 300px;
-		right: -117px;
-		right: -105px;
+		right: -166px;
 		top: 528px;
 	}
 
@@ -96,5 +94,9 @@
 		height: 40%;
 		right: -117px;
 		top: 830px;
+	}
+
+	.protoPhoto {
+		width: 86%;
 	}
 }
