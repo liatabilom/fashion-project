@@ -44,23 +44,23 @@
 
 .label {
 	position: absolute;
-	right: -325px;
+	right: 150px;
 	top: 70px;
-	width: 53%;
+	width: 32%;
 	height: 17%;
 }
 
 .legend {
 	position: absolute;
-	right: -325px;
+	right: 150px;
 	top: 312px;
-	width: 53%;
+	width: 31%;
 	height: 36%;
 }
 
 .prototype {
 	position: absolute;
-	right: -325px;
+	right: 150px;
 	top: 135px;
 }
 

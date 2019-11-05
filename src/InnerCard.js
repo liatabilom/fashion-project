@@ -7,7 +7,7 @@ class InnerCard extends Component {
 		return (
 			<div className="container mt-2 innerSlider">
 				<div className="row innerCard">
-					<div className="card-body col-7">
+					<div className="card-body col-12">
 						<FashionSlider />
 					</div>
 				</div>
