@@ -3,11 +3,8 @@
 .innerSlider {
 	background-image: url(https://i.imgur.com/6pubNrr.jpg);
 	background-size: cover;
-	position: relative;
-	top: 5px;
-	width: 1000px;
 	height: 605px;
-	padding: 10 20 10 10%;
+	padding: 20px;
 }
 
 .row {
