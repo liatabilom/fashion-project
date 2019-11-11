@@ -1,6 +1,6 @@
 .slider {
 	position: relative;
-	left: 90px;
+	left: 110px;
 	top: 50px;
 	width: 500px;
 	height: 400px;
@@ -78,7 +78,7 @@
 		width: 300px;
 	}
 	.label {
-		width: 141%;
+		width: 140%;
 		height: 18%;
 		right: -117px;
 		top: 450px;
